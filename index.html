@@ -1,57 +1,203 @@
-<!-- SEO meta（可放 head） -->
-<title>5 个无广告且墙内外可访问的优质影视资源站（站长 & 影迷收藏）</title>
-<meta name="description" content="推荐 5 个更新快、无广告、墙内外可访问的影视资源站，适合站长互链与影迷收藏：努努影视、爱壹帆、电影天堂、好看影院、1905电影网。">
-<meta property="og:title" content="5 个无广告且墙内外可访问的优质影视资源站（站长 & 影迷收藏）">
-<meta property="og:description" content="推荐 5 个更新快、无广告、墙内外可访问的影视资源站，适合站长互链与影迷收藏。">
-<meta property="og:type" content="article">
-<meta property="og:image" content="https://www.lununu.com/template/nunu/asset/img/favicon.png">
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+<title>5 个无广告影视资源站（移动优先 · 无广告 · 增强兼容）</title>
+<meta name="description" content="推荐 5 个更新快、无广告、墙内外可访问的影视资源站，适合站长互链与影迷收藏。移动端优化，按钮大、页面单列、兼容低端浏览器。" />
+<link rel="canonical" href="https://www.yoursite.com/recommend-movies-mobile.html" />
+<meta name="robots" content="index,follow" />
+<style>
+/* Mobile-first styles: large tap targets, single column, friendly fonts */
+html,body{height:100%;margin:0;padding:0;font-family: -apple-system,system-ui,Segoe UI,Roboto,"Helvetica Neue","PingFang SC","Microsoft Yahei",Arial,sans-serif;background:#fff;color:#0b1220;-webkit-text-size-adjust:100%}
+.container{max-width:820px;margin:0 auto;padding:14px}
+.header{display:flex;align-items:center;justify-content:space-between;padding:6px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:46px;height:46px;border-radius:10px;overflow:hidden;background:#f6f8fb;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center}
+.brand h1{font-size:1.05rem;margin:0;line-height:1.2}
+.subtitle{font-size:0.86rem;color:#5f7284;margin-top:3px}
 
-<!-- 正文（复制下面内容到 body） -->
-<article>
-  <h1>5 个无广告且墙内外可访问的优质影视资源站（站长 &amp; 影迷收藏）</h1>
-  <p>在广告弹窗横飞、片源碎片化的时代，找到既干净又稳定的影视入口非常难。下面推荐 5 个长期实测的影视站 —— 更新快、播放无广告、墙内外均可访问，适合站长互链、收录或直接推荐给用户。</p>
+/* hero */
+.hero{background:#f9fbff;border-radius:12px;padding:12px;margin:10px 0;box-shadow:0 6px 18px rgba(12,36,63,0.04)}
+.hero h2{margin:0;font-size:1.05rem}
+.hero p{margin:8px 0 0;color:#556773;font-size:0.95rem}
 
-  <hr>
+/* list / card */
+.list{margin-top:12px}
+.card{display:flex;align-items:flex-start;gap:12px;background:#ffffff;border-radius:12px;padding:12px;border:1px solid #eef3f9;box-shadow:0 6px 18px rgba(12,36,63,0.03);margin-bottom:12px}
+.fav{width:64px;height:64px;border-radius:10px;background:#f0f4f8;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.fav img{width:48px;height:48px;object-fit:contain;display:block}
+.info{flex:1}
+.title{font-size:1rem;margin:0 0 6px}
+.meta{font-size:0.9rem;color:#6b7f8f;margin-bottom:8px}
+.desc{font-size:0.95rem;color:#122733;line-height:1.45;margin:0}
 
-  <section>
-    <h2>1. 努努影视 — 极速更新、纯净无广告</h2>
-    <p><strong>官网：</strong><a href="https://www.lununu.com" target="_blank" rel="noopener noreferrer">https://www.lununu.com</a></p>
-    <p><img src="https://www.lununu.com/template/nunu/asset/img/favicon.png" alt="努努影视" width="32" height="32"> <strong>亮点：</strong>首发资源速度快、页面轻量、移动端体验优秀。页面和索引结构友好，适合互链与内容聚合。</p>
+/* actions: mobile full-width buttons; on narrow screens they span full width stacked */
+.actions{display:flex;flex-direction:column;gap:8px;margin-left:8px;min-width:110px;flex-shrink:0}
+.actions .btn{display:inline-block;text-align:center;padding:12px 10px;border-radius:10px;font-weight:700;font-size:0.95rem;border:0}
+.btn-primary{background:#ff5a5f;color:#fff}
+.btn-plain{background:#eef6ff;color:#0b66b2}
+@media(max-width:520px){
+  .card{flex-direction:column;align-items:stretch}
+  .actions{flex-direction:row;margin-left:0}
+  .actions .btn{flex:1;padding:12px;border-radius:10px}
+}
+
+/* larger screens: two-column grid */
+@media(min-width:800px){
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .container{padding:20px}
+}
+
+/* footer */
+.howto{background:#fff;border-radius:10px;padding:12px;border:1px solid #eef3f9;margin-top:14px}
+.howto h3{margin:0 0 8px;font-size:1rem}
+.howto ul{margin:0 0 0 18px;padding:0;color:#566c7e}
+.small{font-size:0.9rem;color:#6b7f8f;margin-top:10px}
+
+/* accessibility focus */
+a:focus{outline:3px solid #cfeeff;outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="container" role="main">
+  <header class="header" role="banner">
+    <div class="brand" aria-hidden="false">
+      <div class="logo">
+        <img src="https://www.lununu.com/template/nunu/asset/img/favicon.png" alt="努努影视" width="44" height="44"
+             onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2244%22 height=%2244%22><rect width=%2244%22 height=%2244%22 fill=%22%23f3f6f9%22/><text x=%2222%22 y=%2228%22 font-size=%2210%22 text-anchor=%22middle%22 fill=%22%23677a8a%22>影视</text></svg>';">
+      </div>
+      <div>
+        <h1>5 个无广告影视资源站</h1>
+        <div class="subtitle">更新快 · 无广告 · 墙内外可访问（站长 & 影迷收藏）</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="intro">
+    <h2 id="intro">在广告满天飞的时代，这些站点值得收藏</h2>
+    <p>本列表优先移动端体验：大按钮、单列、图片容错。适合站长互链、内容聚合或直接推荐给用户。</p>
   </section>
 
-  <section>
-    <h2>2. 爱壹帆 — 高清播放体验，零广告</h2>
-    <p><strong>官网：</strong><a href="https://www.iyfyy.tv" target="_blank" rel="noopener noreferrer">https://www.iyfyy.tv</a></p>
-    <p><img src="https://www.iyfyy.tv/template/iyf/asset/img/favicon.png" alt="爱壹帆" width="32" height="32"> <strong>亮点：</strong>极致无广告播放体验、自动适配手机端，片源清晰，适合嵌入或推荐页面。</p>
-  </section>
+  <!-- List - mobile first; on wide screens becomes two column via .grid wrapper -->
+  <div class="list grid" id="list">
 
-  <section>
-    <h2>3. 电影天堂 — 热门资源分享、加载速度快</h2>
-    <p><strong>官网：</strong><a href="https://www.dytiantang.tv" target="_blank" rel="noopener noreferrer">https://www.dytiantang.tv</a></p>
-    <p><img src="https://www.dytiantang.tv/template/zaixian/asset/img/favicon.png" alt="电影天堂" width="32" height="32"> <strong>亮点：</strong>经典老站，线路稳定、支持国内外线路切换，适合整合到资源站或做 API 拉取。</p>
-  </section>
+    <!-- 1 -->
+    <article class="card" aria-labelledby="s1">
+      <div class="fav">
+        <img src="https://www.lununu.com/template/nunu/asset/img/favicon.png" alt="努努影视 logo" loading="lazy"
+             onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22><rect width=%2248%22 height=%2248%22 fill=%22%23f3f6f9%22/></svg>';">
+      </div>
+      <div class="info">
+        <h3 id="s1" class="title">努努影视 — 极速更新、纯净无广告</h3>
+        <div class="meta"><strong>官网：</strong><a href="https://www.lununu.com" target="_blank">lununu.com</a></div>
+        <p class="desc">首发资源速度快、页面轻量、移动端体验优秀。适合互链与内容聚合。</p>
+      </div>
+      <div class="actions" aria-hidden="true">
+        <a class="btn btn-primary" href="https://www.lununu.com" target="_blank">访问站点</a>
+        <a class="btn btn-plain" href="https://www.lununu.com/template/nunu/asset/img/favicon.png" target="_blank">查看图标</a>
+      </div>
+    </article>
 
-  <section>
-    <h2>4. 好看影院 — 极简设计，极致观影体验</h2>
-    <p><strong>官网：</strong><a href="https://www.haohaokan.net" target="_blank" rel="noopener noreferrer">https://www.haohaokan.net</a></p>
-    <p><img src="https://www.haohaokan.net/template/haohaokan/asset/img/favicon.png" alt="好看影院" width="32" height="32"> <strong>亮点：</strong>界面极简、无弹窗、秒开体验好，适合追剧用户和站点集成使用。</p>
-  </section>
+    <!-- 2 -->
+    <article class="card" aria-labelledby="s2">
+      <div class="fav">
+        <img src="https://www.iyfyy.tv/template/iyf/asset/img/favicon.png" alt="爱壹帆 logo" loading="lazy"
+             onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22><rect width=%2248%22 height=%2248%22 fill=%22%23f3f6f9%22/></svg>';">
+      </div>
+      <div class="info">
+        <h3 id="s2" class="title">爱壹帆 — 高清播放体验，零广告</h3>
+        <div class="meta"><strong>官网：</strong><a href="https://www.iyfyy.tv" target="_blank">iyfyy.tv</a></div>
+        <p class="desc">极致无广告播放体验，自动适配手机端，片源清晰，适合嵌入或推荐页面使用。</p>
+      </div>
+      <div class="actions" aria-hidden="true">
+        <a class="btn btn-primary" href="https://www.iyfyy.tv" target="_blank">访问站点</a>
+        <a class="btn btn-plain" href="https://www.iyfyy.tv/template/iyf/asset/img/favicon.png" target="_blank">查看图标</a>
+      </div>
+    </article>
 
-  <section>
-    <h2>5. 1905电影网 — 正版影视内容聚合（可申请收录）</h2>
-    <p><strong>官网：</strong><a href="https://www.1905dsj.com" target="_blank" rel="noopener noreferrer">https://www.1905dsj.com</a></p>
-    <p><img src="https://www.1905dsj.com/template/dianying/asset/img/favicon.png" alt="1905电影网" width="32" height="32"> <strong>亮点：</strong>偏正规与正版内容，适合做长期内容合作与收录申请。</p>
-  </section>
+    <!-- 3 -->
+    <article class="card" aria-labelledby="s3">
+      <div class="fav">
+        <img src="https://www.dytiantang.tv/template/zaixian/asset/img/favicon.png" alt="电影天堂 logo" loading="lazy"
+             onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22><rect width=%2248%22 height=%2248%22 fill=%22%23f3f6f9%22/></svg>';">
+      </div>
+      <div class="info">
+        <h3 id="s3" class="title">电影天堂 — 热门资源分享、加载速度快</h3>
+        <div class="meta"><strong>官网：</strong><a href="https://www.dytiantang.tv" target="_blank">dytiantang.tv</a></div>
+        <p class="desc">老站回归，线路稳定且加载迅速，适合整合到资源站或 API 拉取。</p>
+      </div>
+      <div class="actions" aria-hidden="true">
+        <a class="btn btn-primary" href="https://www.dytiantang.tv" target="_blank">访问站点</a>
+        <a class="btn btn-plain" href="https://www.dytiantang.tv/template/zaixian/asset/img/favicon.png" target="_blank">查看图标</a>
+      </div>
+    </article>
 
-  <hr>
+    <!-- 4 -->
+    <article class="card" aria-labelledby="s4">
+      <div class="fav">
+        <img src="https://www.haohaokan.net/template/haohaokan/asset/img/favicon.png" alt="好看影院 logo" loading="lazy"
+             onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22><rect width=%2248%22 height=%2248%22 fill=%22%23f3f6f9%22/></svg>';">
+      </div>
+      <div class="info">
+        <h3 id="s4" class="title">好看影院 — 极简设计，极致观影体验</h3>
+        <div class="meta"><strong>官网：</strong><a href="https://www.haohaokan.net" target="_blank">haohaokan.net</a></div>
+        <p class="desc">界面极简、无弹窗、秒开体验佳，适合追剧用户与站点整合使用。</p>
+      </div>
+      <div class="actions" aria-hidden="true">
+        <a class="btn btn-primary" href="https://www.haohaokan.net" target="_blank">访问站点</a>
+        <a class="btn btn-plain" href="https://www.haohaokan.net/template/haohaokan/asset/img/favicon.png" target="_blank">查看图标</a>
+      </div>
+    </article>
 
-  <h3>发布 &amp; 站长建议</h3>
-  <ul>
-    <li><strong>标题建议：</strong>例如 “5 个无广告影视资源站推荐（墙内外可用）” 或 “站长必备：可互链收录的影视资源”</li>
-    <li><strong>发布渠道：</strong>站长社区（A5、落伍者）、V2EX、资源群、影视分享论坛</li>
-    <li><strong>锚文本建议：</strong>使用品牌名或自然长尾语句（例如“努努影视 — 无广告在线观看”），避免 Exact-match 关键词堆砌</li>
-  </ul>
+    <!-- 5 -->
+    <article class="card" aria-labelledby="s5">
+      <div class="fav">
+        <img src="https://www.1905dsj.com/template/dianying/asset/img/favicon.png" alt="1905电影网 logo" loading="lazy"
+             onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22><rect width=%2248%22 height=%2248%22 fill=%22%23f3f6f9%22/></svg>';">
+      </div>
+      <div class="info">
+        <h3 id="s5" class="title">1905电影网 — 正版影视内容聚合</h3>
+        <div class="meta"><strong>官网：</strong><a href="https://www.1905dsj.com" target="_blank">1905dsj.com</a></div>
+        <p class="desc">偏正规与正版内容，适合做长期内容合作与收录申请。</p>
+      </div>
+      <div class="actions" aria-hidden="true">
+        <a class="btn btn-primary" href="https://www.1905dsj.com" target="_blank">访问站点</a>
+        <a class="btn btn-plain" href="https://www.1905dsj.com/template/dianying/asset/img/favicon.png" target="_blank">查看图标</a>
+      </div>
+    </article>
 
-  <p><em>注：以上站点以体验为主，发布前请自行核验目标域名的可访问性与合法性。若需要，我可以生成带 OG meta 的完整版 HTML 或论坛版带图版排版。</em></p>
-</article>
+  </div>
 
+
+
+  <footer class="small">© 推荐列表 · 发布前请自行核验目标域名可访问与合法性。</footer>
+</div>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"5 个无广告影视资源站（移动优先）","description":"推荐 5 个更新快、无广告、墙内外可访问的影视资源站，移动端优化。","author":{"@type":"Person","name":"站长推荐"},"datePublished":"2025-10-12"}
+</script>
+
+<!-- Minimal JS: smooth scroll + ensure external links safe -->
+<script>
+(function(){
+  // smooth scroll for in-page anchors
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = this.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); }
+    }, false);
+  });
+  // make target _blank links safe
+  document.querySelectorAll('a[target="_blank"]').forEach(function(a){
+    var rel = a.getAttribute('rel')||'';
+    if(rel.indexOf('noopener')===-1) rel += ' noopener';
+    if(rel.indexOf('noreferrer')===-1) rel += ' noreferrer';
+    a.setAttribute('rel', rel.trim());
+  });
+})();
+</script>
+</body>
+</html>
